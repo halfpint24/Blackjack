@@ -16,8 +16,7 @@ public class BlackjackRunner {
 		gameloop:
 		while(true) {
 			
-			Card c = new Card();
-			List<Card> deck = c.makeDeck();
+			List<Card> deck = Card.makeDeck();
 			Collections.shuffle(deck);
 
 			List<Card> playerHand = new ArrayList<>();

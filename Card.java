@@ -45,7 +45,7 @@ public class Card {
 	 * @return a list of 52 cards.
 	 */
 	
-	public List<Card> makeDeck() {
+	public static List<Card> makeDeck() {
 		
 		List<Card> deck = new ArrayList<Card>();
 		
