@@ -11,7 +11,7 @@ public class Dealer extends Gambler {
 	 * @return the string of the dealer's hand, the first card is hidden
 	 */
 	
-	public String printHand() {
+	public String getMysteryHand() {
 		
 		String str = "";
 		for(int i = 0; i < currentHand.size(); i++) {
@@ -25,18 +25,4 @@ public class Dealer extends Gambler {
 		
 	}
 	
-	/**
-	 * @return the string of the dealer's hand including the mystery card
-	 */
-	
-	public String printFullHand() {
-		String str = "";
-		for(int i = 0; i < currentHand.size(); i++) {
-			if(i == currentHand.size()-1)
-				str += currentHand.get(i);
-			else
-				str += currentHand.get(i) + ", ";
-		}
-		return str;
-	}
 }

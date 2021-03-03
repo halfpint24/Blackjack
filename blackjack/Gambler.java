@@ -21,7 +21,20 @@ abstract class Gambler {
 		currentHand = ch;
 	}
 	
-	abstract String printHand();
+	/**
+	 * @return the player's current hand
+	 */
+	
+	public String getHand() {
+		String str = "";
+		for(int i = 0; i < currentHand.size(); i++) {
+			if(i == currentHand.size()-1)
+				str += currentHand.get(i);
+			else
+				str += currentHand.get(i) + ", ";
+		}
+		return str;
+	}
 	
 	/**
 	 * Calculates the sum of a player's hand
@@ -46,7 +59,7 @@ abstract class Gambler {
 		return sum;
 	}
 	
-	public String printSum() {
+	public String getSum() {
 		return " Sum: " + handSum();
 	}
 	
